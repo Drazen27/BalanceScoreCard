@@ -15,20 +15,260 @@
 }
 else
 {
-    <table class="table">
+    <table class="table text-center ">
         <thead>
-            <th>Distribuidor</th>
-            <th>Ciudad</th>
-            <th>Empleado</th>
-            <th>Producto</th>
-            <th>Precio Unitario</th>     
-            <th>Cantidad</th>
-            <th>SubTotal</th>
-            <th>Total</th>
-            <th>Fecha</th>
+            <tr>
+                <th>PERSPECTIVA</th>
+                <th>OBJETIVO ESTRATÉGICO</th>
+                <th>INDICADOR KPI</th>
+                <th colspan="3" scope="colgroup">SEMÁFORO</th>
+                <th>Resultado Actual</th>
+                <th>INDUCTOR</th>
+                <th>INICIATIVA ESTRATÉGICA</th>
+                <th>RESPONSABLES</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>Peligro</th>
+                <th>Precaución</th>
+                <th>Meta</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
         </thead>
         <tbody>
-            @foreach (var item in ventas)
+            <tr>
+                <td rowspan="5">APRENDIZAJE Y DESARROLLO</td>
+                <td>Capacitar a los empleados en los procesos de entrega</td>
+                <td>Horas de capacitación por empleado</td>
+                <td class="text-danger">25 hrs/año</td>
+                <td class="text-warning">30 hrs/año</td>
+                <td class="text-success">35 hrs/año</td>
+                <td>15 hrs/año</td>
+                <td>Diseñar y ejecutar programas de capacitación específicos para los procesos de entrega</td>
+                <td>Programa de Capacitación</td>
+                <td>Gerente de Recursos Humanos</td>
+            </tr>
+            <tr>
+                <td>Fomentar la innovación</td>
+                <td>Número de nuevas ideas implementadas</td>
+                <td class="text-danger">5 ideas/año</td>
+                <td class="text-warning">7 ideas/año</td>
+                <td class="text-success">10 ideas/año</td>
+                <td>9 ideas/año</td>
+                <td>Crear un entorno que fomente la creatividad y la experimentación</td>
+                <td>Plan de Mejora Continua</td>
+                <td>Equipo de Desarrollo de Productos</td>
+            </tr>
+            <tr>
+                <td>Ambiente de aprendizaje</td>
+                <td>Índice de encuestas de clima laboral</td>
+                <td class="text-danger">5</td>
+                <td class="text-warning">7</td>
+                <td class="text-success">8</td>
+                <td>8</td>
+                <td>Establecer un entorno de trabajo que promueva el aprendizaje continuo</td>
+                <td>Plan de Mejora del Ambiente de Trabajo</td>
+                <td>Gerente de Recursos Humanos, jefes de Departamento</td>
+            </tr>
+            <tr>
+                <td>Generar reuniones corporativas</td>
+                <td>Porcentaje de participación en reuniones corporativas</td>
+                <td class="text-danger">70%</td>
+                <td class="text-warning">80%</td>
+                <td class="text-success">90%</td>
+                <td>70%</td>
+                <td>Organizar reuniones regulares para compartir conocimientos y alinear estrategias</td>
+                <td>Programa de Reuniones Corporativas</td>
+                <td>Equipo Directivo</td>
+            </tr>
+            <tr>
+                <td>Desarrollar habilidades del personal</td>
+                <td>Porcentaje de empleados con habilidades actualizadas</td>
+                <td class="text-danger">60%</td>
+                <td class="text-warning">70%</td>
+                <td class="text-success">80%</td>
+                <td>40%</td>
+                <td>Identificar las habilidades clave requeridas y proporcionar formación y desarrollo</td>
+                <td>Plan estratégico</td>
+                <td>Gerente de Recursos Humanos, jefes de Departamento</td>
+            </tr>
+            <tr>
+                <td rowspan="5">PROCESOS INTERNOS</td>
+                <td>Reducir el tiempo de entrega del producto a vendedores autorizados</td>
+                <td>Tiempo de entrega</td>           
+                <td class="text-danger">6 hrs/día</td>
+                <td class="text-warning">5 hrs/día</td>
+                <td class="text-success">4 hrs/día</td>
+                <td>5 hrs/día</td>
+                <td>Identificar y eliminar cuellos de botella en los procesos de entrega</td>
+                <td>Plan de mejora</td>
+                <td>Gerente de Operaciones, Equipo de Procesos</td>
+            </tr>
+            <tr>
+                <td>Mejorar eficiencia operativa</td>
+                <td>Porcentaje de índice de eficiencia</td>
+                <td class="text-danger">75%</td>
+                <td class="text-warning">85%</td>
+                <td class="text-success">90%</td>
+                <td>76%</td>
+                <td>Implementar metodologías Lean y revisar los procesos internos</td>
+                <td>Plan de eficiencia operativa</td>
+                <td>Gerente de Operaciones</td>
+            </tr>
+            <tr>
+                <td>Mejorar la calidad del producto</td>
+                <td>Porcentaje de cervezas defectuosas producidas</td>
+                <td class="text-danger">30%</td>
+                <td class="text-warning">20%</td>
+                <td class="text-success">15%</td>
+                <td>12%</td>
+                <td>Implementar controles de calidad y retroalimentación continua</td>
+                <td>Plan de mejora de calidad del producto</td>
+                <td>Gerente de Calidad, Equipo de Producción</td>
+            </tr>
+            <tr>
+                <td>Optimizar proceso de servicio</td>
+                <td>Índice de satisfacción del proceso de servicio</td>
+                <td class="text-danger">7.5</td>
+                <td class="text-warning">8.0</td>
+                <td class="text-success">9.5</td>
+                <td>6.5</td>
+                <td>Analizar y mejorar la experiencia del cliente en todos los puntos de contacto</td>
+                <td>Proyecto de Mejora del Proceso de Servicio</td>
+                <td>Gerente de Servicio al Cliente, Equipo de Atención al Cliente</td>
+            </tr>
+            <tr>
+                <td>Aumentar nivel de prospección</td>
+                <td>Porcentaje de prospectos convertidos en clientes</td>
+                <td class="text-danger">50%</td>
+                <td class="text-warning">65%</td>
+                <td class="text-success">80%</td>
+                <td>70%</td>
+                <td>Implementar estrategias de prospección más efectivas</td>
+                <td>Plan de prospección</td>
+                <td>Equipo de Ventas</td>
+            </tr>
+            <tr>
+                <td rowspan="5">CLIENTES</td>
+                <td>Aumentar índice de satisfacción del cliente</td>
+                <td>Índice de satisfacción del cliente</td>
+                <td class="text-danger">6</td>
+                <td class="text-warning">7</td>
+                <td class="text-success">9</td>
+                <td>9</td>
+                <td>Implementar programas de mejora de la experiencia del cliente</td>
+                <td>Plan de mejora de satisfacción del cliente</td>
+                <td>Equipo de Atención al Cliente</td>
+            </tr>
+            <tr>
+                <td>Aumentar la tasa de retención del cliente</td>
+                <td>Tasa de retención del cliente</td>
+                <td class="text-danger">56%</td>
+                <td class="text-warning">78%</td>
+                <td class="text-success">87%</td>
+                <td>88%</td>
+                <td>Ofrecer programas de fidelización y mejorar la calidad del servicio</td>
+                <td>Plan de Cambio</td>
+                <td>Gerente de Retención de Clientes, Equipo de Atención al Cliente</td>
+            </tr>
+            <tr>
+                <td>Expandir base de clientes</td>
+                <td>Crecimiento porcentual de la base de clientes</td>
+                <td class="text-danger">40%</td>
+                <td class="text-warning">45%</td>
+                <td class="text-success">55%</td>
+                <td>47%</td>
+                <td>Desarrollar estrategias de marketing y ventas para llegar a nuevos mercados</td>
+                <td>Plan de Expansión</td>
+                <td>Gerente de Marketing, Equipo de Ventas</td>
+            </tr>
+            <tr>
+                <td>Obtener lealtad de los clientes</td>
+                <td>Net Promoter Score (NPS) - Puntuación de recomendación de la marca</td>
+                <td class="text-danger">6.5</td>
+                <td class="text-warning"> 7</td>
+                <td class="text-success">8.5</td>
+                <td>7.5</td>
+                <td>Mejorar la experiencia del cliente y ofrecer incentivos de lealtad</td>
+                <td>Plan de mejora de lealtad de cliente</td>
+                <td>Gerente de Experiencia del Cliente, Equipo de Atención al Cliente</td>
+            </tr>
+            <tr>
+                <td>Aumentar tasa de incremento de clientes anuales</td>
+                <td>Porcentaje de incremento anual de clientes</td>
+                <td class="text-danger">15%</td>
+                <td class="text-warning">20%</td>
+                <td class="text-success">25%</td>
+                <td>26%</td>
+                <td>Implementar estrategias de captación de clientes y programas de referencia</td>
+                <td>Programa de Captación</td>
+                <td>Equipo de Ventas, Gerente de Marketing</td>
+            </tr>
+            <tr>
+                <td rowspan="5">FINANCIERA</td>
+                <td>Optimizar la rentabilidad</td>
+                <td>Return on Equity (ROE), Return on Investments (ROI)</td>
+                <td class="text-danger">ROE: 45%, ROI: 35%</td>
+                <td class="text-warning">ROE: 55%, ROI: 40%</td>
+                <td class="text-success">ROE: 65%, ROI: 50%</td>
+                <td>ROE: 60%, ROI: 47%</td>
+                <td>Implementar estrategias de reducción de costos y aumento de ingresos</td>
+                <td>Plan Estratégico Institucional</td>
+                <td>Director Financiero, Equipo de Finanzas</td>
+            </tr>
+            <tr>
+                <td>Incrementar ingresos anuales</td>
+                <td>Crecimiento porcentual de los ingresos</td>
+                <td class="text-danger">5%</td>
+                <td class="text-warning">20%</td>
+                <td class="text-success">24%</td>
+                <td>20%</td>
+                <td>Mejorar las estrategias de ventas y marketing, y ampliar la base de clientes</td>
+                <td>Plan de mejora de ingresos anuales</td>
+                <td>Gerente de Ventas, Gerente de Marketing</td>
+            </tr>
+            <tr>
+                <td>Aumentar el margen de beneficio</td>
+                <td>Porcentaje de margen bruto</td>
+                <td class="text-danger">70%</td>
+                <td class="text-warning">75%</td>
+                <td class="text-success">78%</td>
+                <td>65%</td>
+                <td>Reducir costos operativos y mejorar la eficiencia de los procesos</td>
+                <td>Plan de mejora de margen de beneficios</td>
+                <td>Director Financiero, Gerente de Operaciones</td>
+            </tr>
+            <tr>
+                <td>Reducir costos operativos</td>
+                <td>Costo de operación como % de los ingresos</td>
+                <td class="text-danger">65%</td>
+                <td class="text-warning">55%</td>
+                <td class="text-success">45%</td>
+                <td>56%</td>
+                <td>Identificar áreas de gastos innecesarios y mejorar la eficiencia operativa</td>
+                <td>Plan de mejora de costos operativos</td>
+                <td>Director Financiero, Gerente de Operaciones</td>
+            </tr>
+            <tr>
+                <td>Expandirse en mercados internacionales</td>
+                <td>Porcentaje de ventas internacionales</td>
+                <td class="text-danger">15%</td>
+                <td class="text-warning">18%</td>
+                <td class="text-success">23%</td>
+                <td>19%</td>
+                <td>Desarrollar e implementar estrategias de entrada en nuevos mercados</td>
+                <td>Plan de expansión en mercados internacionales</td>
+                <td>Director de Marketing, Equipo de Ventas</td>
+            </tr>
+        </tbody>
+    </table>
+   
+            @* @foreach (var item in ventas)
             {
                 <tr>
                     <td>@item.DistribuidorNavigation.Nombre</td>
@@ -41,8 +281,6 @@ else
                     <td>@item.VentaNavigation.TotalVenta</td>
                     <td>@item.TiempoNavigation.Fecha</td>
                 </tr>                
-            }
-        </tbody>
-    </table>
+            } *@
 }
 
