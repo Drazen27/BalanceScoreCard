@@ -1,0 +1,48 @@
+﻿@page "/"
+
+@inject IVentasService VentasService
+@code {
+    List<Hecho> ventas = new List<Hecho>();
+    protected override async Task OnInitializedAsync()
+    {
+        ventas = await VentasService.GetAllVentasAsync();
+    }
+}
+<PageTitle>Cuadro de Mando Integral</PageTitle>
+@if (ventas.Count < 1)
+{
+    <p><em>Cargando los datos</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <th>Distribuidor</th>
+            <th>Ciudad</th>
+            <th>Empleado</th>
+            <th>Producto</th>
+            <th>Precio Unitario</th>     
+            <th>Cantidad</th>
+            <th>SubTotal</th>
+            <th>Total</th>
+            <th>Fecha</th>
+        </thead>
+        <tbody>
+            @foreach (var item in ventas)
+            {
+                <tr>
+                    <td>@item.DistribuidorNavigation.Nombre</td>
+                    <td>@item.DistribuidorNavigation.Ciudad</td>
+                    <td>@item.EmpleadoNavigation.Nombres @item.EmpleadoNavigation.Apellidos</td>
+                    <td>@item.ProductoNavigation.Nombre</td>
+                    <td>@item.ProductoNavigation.PrecioUnit</td>
+                    <td>@item.Cantidad</td>
+                    <td>@item.SubTotal</td>
+                    <td>@item.VentaNavigation.TotalVenta</td>
+                    <td>@item.TiempoNavigation.Fecha</td>
+                </tr>                
+            }
+        </tbody>
+    </table>
+}
+
