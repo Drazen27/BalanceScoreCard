@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BalanceScoreCard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d41ca2eada0b73f84d9b0af2eb6aedbd0bf9a55")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94fa2a7cb3eb0304cefc56b7281a9f1003cca1ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("BalanceScoreCard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BalanceScoreCard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

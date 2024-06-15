@@ -1,19 +1,13 @@
 ﻿@page "/counter"
 @rendermode InteractiveServer
 
-<PageTitle>Counter</PageTitle>
+<PageTitle>Dashboard</PageTitle>
+<h1 class="h4">Dashboard</h1>
+<div class="container-fluid vh-100 d-flex flex-column">
+    <div class="row flex-grow-1">
+        <div class="col-12 d-flex flex-column">
+            <iframe title="OLAP" class="flex-grow-1 border-0" src="https://app.powerbi.com/reportEmbed?reportId=76c7bb23-7018-4fd1-8aaa-c8a1f9721b68&autoAuth=true&ctid=77cab36c-76b2-48c3-9c54-cb9e4ee09b72" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
 
-<h1>Counter</h1>
-
-<p role="status">Current count: @currentCount</p>
-
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
-
-@code {
-    private int currentCount = 0;
-
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
-}

@@ -11,7 +11,9 @@ public partial class Hecho
 
     public int? IdProducto { get; set; }
 
-    public DateOnly? IdTiempo { get; set; }
+    public DateTime? IdTiempoPedido { get; set; }
+
+    public DateTime? IdTiempoEntrega { get; set; }
 
     public int? IdDistribuidor { get; set; }
 
@@ -27,7 +29,9 @@ public partial class Hecho
 
     public virtual DimProducto? ProductoNavigation { get; set; }
 
-    public virtual DimTiempo? TiempoNavigation { get; set; }
+    public virtual DimTiempoEntrega? TiempoEntregaNavigation { get; set; }
 
-    public virtual DimVentum? VentaNavigation { get; set; }
+    public virtual DimTiempoPedido? TiempoPedidoNavigation { get; set; }
+
+    public virtual DimVenta? VentaNavigation { get; set; }
 }

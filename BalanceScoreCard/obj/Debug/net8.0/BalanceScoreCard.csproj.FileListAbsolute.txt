@@ -133,3 +133,5 @@ C:\Users\draze\source\repos\BalanceScoreCard\BalanceScoreCard\obj\Debug\net8.0\r
 C:\Users\draze\source\repos\BalanceScoreCard\BalanceScoreCard\obj\Debug\net8.0\BalanceScoreCard.pdb
 C:\Users\draze\source\repos\BalanceScoreCard\BalanceScoreCard\obj\Debug\net8.0\BalanceScoreCard.genruntimeconfig.cache
 C:\Users\draze\source\repos\BalanceScoreCard\BalanceScoreCard\obj\Debug\net8.0\ref\BalanceScoreCard.dll
+C:\Users\draze\source\repos\BalanceScoreCard\BalanceScoreCard\bin\Debug\net8.0\ChartJs.Blazor.dll
+C:\Users\draze\source\repos\BalanceScoreCard\BalanceScoreCard\bin\Debug\net8.0\Newtonsoft.Json.dll

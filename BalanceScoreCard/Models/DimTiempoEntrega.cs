@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace BalanceScoreCard.Models;
 
-public partial class DimTiempo
+public partial class DimTiempoEntrega
 {
-    public DateOnly Fecha { get; set; }
+    public DateTime Fecha { get; set; }
 
     public int? Dia { get; set; }
 

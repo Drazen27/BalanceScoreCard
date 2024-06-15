@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace BalanceScoreCard.Models;
 
-public partial class DimVentum
+public partial class DimVenta
 {
     public int IdVenta { get; set; }
 
